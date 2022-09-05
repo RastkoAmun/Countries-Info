@@ -6,7 +6,7 @@ const ShowCountry = ({country}) => {
   const flag = country.flags.png;
 
   return(
-    <div>
+    <div className='countries'>
       <h2>{country.name.common}</h2>
       <div>
         <div>Capital: {country.capital}</div>

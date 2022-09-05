@@ -3,6 +3,7 @@ import Search from './components/Search'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import Display from './components/Display'
+import './App.css'
 
 function App() {
   const [countries, setCountries] = useState([])
@@ -24,8 +25,8 @@ function App() {
   }
 
   return (
-    <div>
-      <Search value={input} onChange={handleInput}/>
+    <div className='container'>
+      <Search className='search' value={input} onChange={handleInput}/>
       <Display countries={searchedCountries} />
     </div>
   );
