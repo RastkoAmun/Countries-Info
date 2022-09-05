@@ -13,7 +13,6 @@ function App() {
       .get('https://restcountries.com/v3.1/all')
       .then(response => {
         setCountries(response.data)
-        console.log(response.data[5])
       })    
   }, [])
 
